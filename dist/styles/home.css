@@ -1253,7 +1253,7 @@ footer .trapezoid-box div:after {
     transform: skew(-13deg, 0);
 }
 footer .trapezoid-box div:after {
-    border: 1px solid #67ad3d;
+    border: 1px solid #247BDB;
 }
 @media (max-width: 1024px) {
     footer .trapezoid-box div:after {
@@ -1804,7 +1804,7 @@ html[data-is-ie="True"] .page-content-container section.get-offer .image img {
     transform: skew(-13deg, 0);
 }
 .page-content-container section.why-filo .image .trapezoid-box div:after {
-    border: 1px solid #67ad3d;
+    border: 1px solid #247BDB;
 }
 .page-content-container section.why-filo .content {
     margin-left: 160px;
@@ -2762,7 +2762,7 @@ html[data-is-ie="True"] .page-content-container section.get-offer .image img {
     transform: skew(-13deg, 0);
 }
 .page-content-container section.get-offer .image .trapezoid-box div:after {
-    border: 1px solid #67ad3d;
+    border: 1px solid #247BDB;
 }
 @media (max-width: 767px) {
     .page-content-container section.get-offer .image .trapezoid-box div:after {

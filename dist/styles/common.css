@@ -2434,7 +2434,7 @@ html {
         margin-top:28px;
     }
     header .header-container .logo img {
-        width: 75%;
+        width: 75% !important;
     }
     header .header-container .main-navigation {
         background-color: #151D33;
@@ -2519,7 +2519,7 @@ html {
         bottom: 0;
         left: -1.5px;
         width: 3px;
-        background-color: #67ad3d;
+        background-color: #247BDB !important;
         transform: skew(-13deg, 0);
     }
     /*
