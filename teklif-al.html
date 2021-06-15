@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en" data-is-ie="False">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intercity Filo - Teklif Al</title>
+    <link rel="shortcut icon" href="dist/images/icons/favicon.ico" type="image/x-icon" />
+
+
+    <link rel="stylesheet" href="/dist/styles/common.css" />
+    <link rel="stylesheet" href="/dist/styles/get-offer.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo"><a href="/index.html"><img src="/dist/images/rent8_logo.svg" /></a></div>
+                <div class="show-menu-for-mobile">
+                    <button>
+                        <img width="21" height="21" src="dist/images/icons/hamburger_menu.svg" class="fw" />
+                    </button>
+                </div>
+                <nav class="main-navigation">
+                    <!-- 
+                                <ul class="sub-nav level1">
+                                <li class="level1">
+                                    <div class="menu-title">
+                                        <a href="index.html">ANASAYFA</a>
+                                    </div>
+                                </li>
+                                <li class="level1">
+                                    <div class="menu-title">
+                                        <a href="online-islemler.html">ONLINE İŞLEMLER</a>
+                                    </div>
+                                </li>
+                                <li class="level1">
+                                    <div class="menu-title">
+                                        <a href="sikca-sorulanlar/kiralama.html">SIKÇA SORULANLAR</a>
+                                    </div>
+                                </li>
+                                <li class="level1">
+                                    <div class="menu-title">
+                                        <a href="en/index.html" class="english-flag">
+                                            EN
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="level1">
+                                    <div class="menu-title">
+                                        <a href="teklif-al.html">TEKLİF AL</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            -->
+                    <ul class="main-nav level1">
+                        <li class="level1 @*has-sub-menu*@">
+                            <div class="menu-title">
+                                <!-- <a href="uzun-donem-filo-kiralama.html">UZUN DÖNEM FİLO KİRALAMA</a> -->
+                                <a href="./index.html">ANA SAYFA</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./kurumsal/hakkimizda.html">KURUMSAL</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./hizmetlerimiz.html">HİZMETLERİMİZ</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./kariyer/insan-kaynaklari-politikamiz.html">KARİYER</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./iletisim.html">İLETİŞİM</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./sikca-sorulanlar/genel.html">SSS</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <section class="show-case" style=""></section>
+    <div class="breadcrumb-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">Anasayfa</a>
+                </li>
+                <span>
+                    Teklif Al
+                </span>
+
+            </ul>
+        </div>
+    </div>
+    <div class="page-content-container static">
+        <div class="container">
+            <div class="page-content">
+                <h1 class="title have-underline">Teklif Al</h1>
+                <form id="aracEkleForm">
+                    <div class="form-section">
+                        <div class="section-title">
+                            Araç Seçimi
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Marka</div>
+                                <div class="element select-element">
+                                    <select name="markaId" id="markaId" required>
+                                        <option value="">Marka seçiniz</option>
+                                        <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                        <option value="AUDI">AUDI</option>
+                                        <option value="BMW">BMW</option>
+                                        <option value="CHRYSLER">CHRYSLER</option>
+                                        <option value="CITROEN">CITROEN</option>
+                                        <option value="DACIA">DACIA</option>
+                                        <option value="DS">DS</option>
+                                        <option value="FIAT">FIAT</option>
+                                        <option value="FORD">FORD</option>
+                                        <option value="HONDA">HONDA</option>
+                                        <option value="HYUNDAI">HYUNDAI</option>
+                                        <option value="JAGUAR">JAGUAR</option>
+                                        <option value="KIA">KIA</option>
+                                        <option value="LAND ROVER">LAND ROVER</option>
+                                        <option value="LEXUS">LEXUS</option>
+                                        <option value="MAZDA">MAZDA</option>
+                                        <option value="MERCEDES">MERCEDES</option>
+                                        <option value="MINI">MINI</option>
+                                        <option value="MITSUBISHI">MITSUBISHI</option>
+                                        <option value="NISSAN">NISSAN</option>
+                                        <option value="OPEL">OPEL</option>
+                                        <option value="PEUGEOT">PEUGEOT</option>
+                                        <option value="PORSCHE">PORSCHE</option>
+                                        <option value="RANGE ROVER">RANGE ROVER</option>
+                                        <option value="RENAULT">RENAULT</option>
+                                        <option value="SEAT">SEAT</option>
+                                        <option value="SKODA">SKODA</option>
+                                        <option value="SUBARU">SUBARU</option>
+                                        <option value="SUZUKI">SUZUKI</option>
+                                        <option value="TOYOTA">TOYOTA</option>
+                                        <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                        <option value="VOLVO">VOLVO</option>
+                                    </select>
+                                    <img src="dist/images/icons/arrow_up.svg">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Model</div>
+                                <div class="element select-element">
+                                    <select name="modelId" id="modelId" required>
+                                        <option value="">Model seçiniz</option>
+                                    </select>
+                                    <img src="dist/images/icons/arrow_up.svg">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Adet</div>
+                                <div class="element">
+                                    <input type="text" name="adet" id="adet" pattern="^\d+$" required />
+                                </div>
+                            </div>
+                            <div class="form-element">
+                                <div class="element-title">Kiralama Süresi</div>
+                                <div class="element select-element">
+                                    <select name="kiralamaSuresi" id="kiralamaSuresi" required>
+                                        <option value="12">1 Yıl</option>
+                                        <option value="24">2 Yıl</option>
+                                        <option value="36">3 Yıl</option>
+                                    </select>
+                                    <img src="dist/images/icons/arrow_up.svg">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Para Birimi</div>
+                                <div class="element select-element">
+                                    <select name="paraBirimi" id="paraBirimi" required>
+                                        <option value="TRY" selected="selected">TL</option>
+                                    </select>
+                                    <img src="dist/images/icons/arrow_up.svg">
+                                </div>
+                            </div>
+                            <div class="form-element">
+                                <div class="element-title">Yıllık KM Limiti</div>
+                                <div class="element select-element">
+                                    <select name="kmLimiti" id="kmLimiti" required>
+                                        <option value="">Limit seçiniz</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="25000">25.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="35000">35.000</option>
+                                        <option value="40000">40.000</option>
+                                        <option value="45000">45.000</option>
+                                        <option value="50000">50.000</option>
+                                    </select>
+                                    <img src="dist/images/icons/arrow_up.svg">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element ">
+                                <div class="element-title"></div>
+                                <div class="element action">
+                                    <button type="submit" class="btn green-button" id="aracEkleButon">Araç Ekle</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+                <form id="teklifForm" method="post" action="https://intercityfilo.com/teklif-al">
+                    <div class="form-section">
+                        <div class="section-title">
+                            Seçilen Araç Listesi
+                        </div>
+                        <div class="car-list-container" id="teklifAraclar">
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="section-title">
+                            Firma Bilgileri
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Firma Adı</div>
+                                <div class="element">
+                                    <input type="text" name="firmaAdi" id="firmaAdi" required />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Faaliyet Alanı</div>
+                                <div class="element">
+                                    <input type="text" name="faaliyetAlani" id="faaliyetAlani" required />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Vergi Dairesi</div>
+                                <div class="element">
+                                    <input type="text" name="vergiDairesi" id="vergiDairesi" required />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Vergi Numarası</div>
+                                <div class="element">
+                                    <input type="text" name="vergiNo" id="vergiNo" pattern="^\d+$" required />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Yıllık Ciro Tutarı</div>
+                                <div class="element select-element">
+                                    <select name="yillikCiro" id="yillikCiro" required>
+                                        <option value=""></option>
+                                        <option value="0-5.000.000 TL">0 - 5 Milyon TL</option>
+                                        <option value="5.000.000-25.000.000 TL">5 Milyon TL - 25 Milyon TL</option>
+                                        <option value="25.000.000-50.000.000 TL">25 Milyon TL - 50 Milyon TL</option>
+                                        <option value="50.000.000-450.000.000 TL">50 Milyon - 450 Milyon TL</option>
+                                        <option value="450.000.000 TL ve &#xFC;zeri">450 Milyon TL ve üzeri</option>
+                                    </select>
+                                    <img src="dist/images/icons/arrow_up.svg">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">DBS Kullanılıyor mu?</div>
+                                <div class="element select-element">
+                                    <select name="dbsVarmi" id="dbsVarmi" required>
+                                        <option value=""></option>
+                                        <option value="Hay&#x131;r">Hayır</option>
+                                        <option value="Evet">Evet</option>
+                                    </select>
+                                    <img src="dist/images/icons/arrow_up.svg">
+                                </div>
+                            </div>
+                            <div class="form-element">
+
+                            </div>
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Kiralanacak Araç Sayısı</div>
+                                <div class="element ">
+                                    <input type="text" name="aracSayisi" id="aracSayisi" pattern="^\d+$" required />
+                                </div>
+                            </div>
+                            <div class="form-element">
+                                <div class="element-title">Mevcut Binek Araç Sayısı</div>
+                                <div class="element">
+                                    <input type="text" name="mevcutArac" id="mevcutArac" pattern="^\d+$" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Mevcut Filo Tipi</div>
+                                <div class="element select-element">
+                                    <select name="mevcutFiloTipi" id="mevcutFiloTipi">
+                                        <option value=""></option>
+                                        <option value="Mevcut De&#x11F;il">Mevcut Değil</option>
+                                        <option value="Sat&#x131;n Alma">Satın Alma</option>
+                                        <option value="Operasyonel Filo Kiralama">Operasyonel Filo Kiralama</option>
+                                        <option value="Sat&#x131;n Alma ve Operasyonel Filo Kiralama">Satın Alma ve
+                                            Operasyonel Filo Kiralama</option>
+                                    </select>
+                                    <img src="dist/images/icons/arrow_up.svg">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="section-title">
+                            İletişim Bilgileri
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">İlgili Kişi</div>
+                                <div class="element">
+                                    <input type="text" name="ilgiliKisi" id="ilgiliKisi" required />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">İlgili Kişi Ünvanı</div>
+                                <div class="element">
+                                    <input type="text" id="unvan" name="unvan" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Firma Adresi</div>
+                                <div class="element">
+                                    <textarea class="message" id="adres" rows="3" name="adres" placeholder=""
+                                        required></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Telefon Numarası</div>
+                                <div class="element">
+                                    <input type="text" name="telefon" id="telefon"
+                                        pattern="^(0)([0-9]{3})\s?([0-9]{3})\s?([0-9]{2})\s?([0-9]{2})$" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">E-Posta Adresi</div>
+                                <div class="element">
+                                    <input type="email" id="email" name="email"
+                                        pattern="^\w+[-\.\w]*@(?!(?:gmail|outlook|hotmail|windowslive|yahoo|mynet|superonline|yandex)\.(?:com|com.tr)$)\w+[-\.\w]*?\.\w{2,4}$"
+                                        required />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">İnternet Adresi</div>
+                                <div class="element">
+                                    <input type="text" id="website" name="website" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title"></div>
+                                <div class="element warining">
+                                    <p>Farklı “Kiralama Süresi” ve “Para Birimi” üzerinden teklif talep ediyorsanız,
+                                        lütfen “Bize İletmek İstedikleriniz” bölümüne mesaj yazınız.
+                                        @gmail.com, @outlook.com, @hotmail.com, @windowslive.com, @yahoo.com,
+                                        @mynet.com, @superonline.com, @yandex.com gibi ücretsiz e-posta sağlayıcı
+                                        uzantılı e-posta adreslerine teklif gönderilmeyecektir.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="section-title">
+                            Bize İletmek İstedikleriniz
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title">Bize İletmek İstedikleriniz</div>
+                                <div class="element">
+                                    <textarea class="message" id="notlar" rows="3" name="notlar"
+                                        placeholder=""></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element">
+                                <div class="element-title"></div>
+                                <div class="">
+
+                                    <div id="f7bffe44-665a-496c-93ec-b344165d6ce9" class="g-recaptcha"
+                                        data-sitekey="6LcvfPYZAAAAAKSDI7HkL3mdPeoi6KbO9AK7-bTb"></div>
+                                    <script>
+                                        function _f7bffe44_665a_496c_93ec_b344165d6ce9() {
+                                            if (typeof grecaptcha !== 'undefined')
+                                                grecaptcha.render('f7bffe44-665a-496c-93ec-b344165d6ce9', {
+                                                    'sitekey': '6LcvfPYZAAAAAKSDI7HkL3mdPeoi6KbO9AK7-bTb',
+                                                    'theme': 'light',
+                                                })
+                                        }
+                                    </script>
+                                    <script
+                                        src="../www.google.com/recaptcha/apiddd3.js?onload=_f7bffe44_665a_496c_93ec_b344165d6ce9&amp;render=explicit&amp;hl=en"
+                                        async defer></script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-element-row">
+                            <div class="form-element ">
+                                <div class="element-title"></div>
+                                <div class="element action">
+                                    <button type="submit" id="teklifSubmitButon" class="btn green-button">Teklif Talep
+                                        Et</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="circle"></div>
+        <div class="trapezoid-box">
+            <div></div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-top">
+            7/24 Rent Eight Acil Yardım Hattı
+            <a href="tel:0 (216) 645 7 000">0 (216) 645 7 000</a>
+        </div>
+        <div class="main-footer">
+
+            <div class="container">
+                <ul class="level1">
+                    <li class="level1">
+                        <a href="uzun-donem-filo-kiralama.html"><span>UZUN DÖNEM FİLO KİRALAMA</span></a>
+                        <ul class="level2">
+                            <li class="level2"><a href="uzun-donem-filo-kiralama.html#filo-kiralamanin-avantajlari">Filo
+                                    Kiralamanın Avantajları</a></li>
+                            <li class="level2"><a
+                                    href="uzun-donem-filo-kiralama.html#kiralama-satin-alma-karsilastirma">Kiralama -
+                                    Satın Alma
+                                    Karşılaştırma</a></li>
+                            <li class="level2"><a href="teklif-al.html">Teklif Al</a></li>
+                        </ul>
+                    </li>
+                    <li class="level1 corporate">
+                        <a href="/kurumsal/hakkimizda.html"><span>KURUMSAL</span></a>
+                        <ul class="level2">
+                            <li class="level2"><a href="/kurumsal/hakkimizda.html">Hakkımızda</a></li>
+                            <li class="level2"><a href="/kurumsal/tarihce.html">Tarihçe</a></li>
+                            <li class="level2">
+                                <span>Grup Şirketlerimiz</span>
+                                <ul class="level3">
+                                    <li class="level3"><a href="/kurumsal/Rent Eight-istanbul-park.html">Rent Eight
+                                            İstanbul
+                                            Park</a></li>
+                                    <li class="level3"><a href="/kurumsal/Rent Eight-destek.html">Rent Eight Destek</a>
+                                    </li>
+                                    <li class="level3"><a href="/kurumsal/Rent Eight-2-el.html">Rent Eight 2. El</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level2"><a href="/kurumsal/kultur-degerlerimiz.html">Kültür &amp;
+                                    Değerlerimiz</a>
+                            </li>
+                            <li class="level2"><a href="/kurumsal/basinda-biz.html">Basında Biz</a></li>
+                            <li class="level2"><a href="/kurumsal/baskanin-mesaji.html">Başkan'ın Mesajı</a></li>
+                        </ul>
+                    </li>
+                    <li class="level1 career">
+                        <a href="/kariyer/insan-kaynaklari-politikamiz.html"><span>KARİYER</span></a>
+                        <ul class="level2">
+                            <li class="level2"><a href="/kariyer/insan-kaynaklari-politikamiz.html">İnsan Kaynakları
+                                    Politikamız</a></li>
+                            <li class="level2"><a href="/kariyer/organizasyon-yapimiz.html">Organizasyon Yapımız</a>
+                            </li>
+                            <li class="level2"><a href="/kariyer/calisma-ilkelerimiz.html">Çalışma İlkelerimiz</a></li>
+                            <li class="level2"><a href="/kariyer/kariyer-gelisimi.html">Kariyer Gelişimi</a></li>
+                            <li class="level2"><a href="/kariyer/ise-alim.html">İşe Alım</a></li>
+                            <li class="level2"><a href="/kariyer/basvuru-formu.html">Başvuru Formu</a></li>
+                        </ul>
+                    </li>
+                    <li class="level1 contact">
+                        <a href="/iletisim.html">İLETİŞİM</a>
+                    </li>
+                    <li class="level1 online-services">
+                        <a href="/online-islemler.html"><span>ONLINE İŞLEMLER</span></a>
+                        <ul class="level2">
+                            <li class="level2"><a href="https://online.Rent Eightrentacar.com/tpc/" target="_blank">TPC
+                                    Kontrol</a></li>
+                            <li class="level2"><a href="https://online.Rent Eightrentacar.com/ogs/" target="_blank">OGS
+                                    /
+                                    HGS
+                                    Geçiş</a></li>
+                            <li class="level2"><a href="https://online.Rent Eightrentacar.com/kgm-ceza/"
+                                    target="_blank">OGS
+                                    / HGS Ceza</a></li>
+                            <li class="level2"><a href="https://online.Rent Eightrentacar.com/lastik-talep/"
+                                    target="_blank">Lastik Talep</a></li>
+                        </ul>
+                    </li>
+                    <li class="level1 faq"><a href="/sikca-sorulanlar/kiralama.html">SIKÇA SORULAN SORULAR</a></li>
+                </ul>
+                <div class="social-media-icons">
+                    <a href="https://facebook.com/Rent Eight" target="_blank"><img
+                            src="/dist/images/social/facebook.svg" class="fw" alt="Facebook"></a>
+                    <a href="https://linkedin.com/company/Rent Eightrentacar" target="_blank"><img
+                            src="/dist/images/social/linkedin.svg" class="fw" alt="Linkedin"></a>
+                    <a href="https://instagram.com/Rent Eightpark" target="_blank"><img
+                            src="/dist/images/social/instagram.svg" class="fw" alt="Instagram"></a>
+                    <a href="https://twitter.com/Rent Eight" target="_blank"><img src="/dist/images/social/twitter.svg"
+                            class="fw" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="logo fwx"><a href="index.html"><img src="/dist/images/rent8_logo.svg" /></a></div>
+                    <div class="copyright-text">
+                        © 1991-2021 Rent Eight. Tüm Hakları Saklıdır.<br />
+                        Rent Eight, Ekim Turizm Tic. ve San. A.Ş.'nin tescilli markasıdır.<br />
+                        <div class="copyright-text-link">
+                            <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+                            <a href="kvkk/kisisel-verilerin-korunmasi-ve-i%cc%87slenmesi-politikasi.html">Kişisel
+                                Verilerin Korunması</a>
+                            <a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/11226"
+                                target="_blank" rel="nofollow">Bilgi Toplumu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="triangle">
+            <svg width="198" class="triangle1" height="168">
+                <polygon class="" points="98,0 0,168 198,168" style="fill:transparent;stroke:#67AD3D;stroke-width:1" />
+            </svg>
+            <svg width="198" class="triangle2" height="168">
+                <polygon class="" points="98,0 0,168 198,168" style="fill:transparent;stroke:#67AD3D;stroke-width:1" />
+            </svg>
+        </div>
+        <div class="trapezoid-box">
+            <div></div>
+        </div>
+    </footer>
+
+    <div class="cookie-agreement-container">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    Sitemizin işlemesini sağlamak için teknik çerezler kullanılmaktadır.
+                    <br><br>
+                    Çerezler hakkında detaylı bilgi almak için <a href="gizlilik-politikasi.html"><strong>Çerez
+                            Politikası</strong></a> ve
+                    <a href="kvkk/cerez-aydinlatma-metni.html"><strong>Çerez Aydınlatma Metni</strong></a>'ni
+                    inceleyebilirsiniz.
+                </div>
+                <div class="agree-button-container">
+                    <button class="agree">KABUL ET</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src='../www.google.com/recaptcha/api.js'></script>
+    <script id="modelTemplate" type="text/x-handlebars-template">
+	    {{#each data}}
+	        <option value="{{modelId}}">{{modelAdi}}</option>
+	    {{/each}}
+	</script>
+    <script id="aracTemplate" type="text/x-handlebars-template">
+	    {{#each data}}
+            <div class="car-item-container">
+                <input type="hidden" name="araclar" value="{{modelId}}|{{adet}}|{{yilId}}|{{paraBirimiId}}|{{kmId}}">
+                <div class="form-element-row">
+                    <div class="form-element ">
+                        <div class="element-title">Marka:</div>
+                        <div class="element">
+                            {{marka}}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-element-row">
+                    <div class="form-element ">
+                        <div class="element-title">Model:</div>
+                        <div class="element">
+                            {{model}}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-element-row">
+                    <div class="form-element ">
+                        <div class="element-title">Adet:</div>
+                        <div class="element">
+                            {{adet}}
+                        </div>
+                    </div>
+                    <div class="form-element ">
+                        <div class="element-title">Kiralama Süresi:</div>
+                        <div class="element">
+                            {{yil}}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-element-row">
+                    <div class="form-element ">
+                        <div class="element-title">Para Birimi:</div>
+                        <div class="element">
+                            {{paraBirimi}}
+                        </div>
+                    </div>
+                    <div class="form-element ">
+                        <div class="element-title">Yıllık KM Limiti:</div>
+                        <div class="element">
+                            {{km}}
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="delete-button" type="button">
+                    <img width="16" height="16" src="dist/images/icons/close.svg">
+                </button>
+            </div>
+  	    {{/each}}
+    </script>
+    <script src="../s3.amazonaws.com/builds.handlebarsjs.com/handlebars.min-v4.7.6.js"></script>
+    <script src="../code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="dist/scripts/get-offer.js"></script>
+    <script>
+        window.deleteItem = function (event) {
+            event.path[2].remove()
+        }
+
+        var modeller = [
+            { modelId: 94618, markaAdi: "ALFA ROMEO", modelAdi: "GIULIA 2.0 200 SPRINT RWD AT" }, { modelId: 95175, markaAdi: "ALFA ROMEO", modelAdi: "GIULIETTA 1.6 JTD 120 SPRINT TCT" }, { modelId: 95176, markaAdi: "ALFA ROMEO", modelAdi: "GIULIETTA 1.6 JTD 120 TI TCT" }, { modelId: 94619, markaAdi: "ALFA ROMEO", modelAdi: "STELVIO 2.0 200 SPRINT AWD AT" }, { modelId: 94620, markaAdi: "ALFA ROMEO", modelAdi: "STELVIO 2.0 280 VELOCE AWD AT" }, { modelId: 98442, markaAdi: "AUDI", modelAdi: "A3 SEDAN 30 TFSI 110 ADVANCED STRONIC" }, { modelId: 98444, markaAdi: "AUDI", modelAdi: "A3 SEDAN 35 TFSI 150 ADVANCED STRONIC" }, { modelId: 98448, markaAdi: "AUDI", modelAdi: "A3 SPORTBACK 35 TFSI 150 ADVANCED STRONIC" }, { modelId: 97760, markaAdi: "AUDI", modelAdi: "A4 40 TDI 204 ADVANCED STRONIC PI" }, { modelId: 97761, markaAdi: "AUDI", modelAdi: "A4 40 TDI 204 S LINE STRONIC PI" }, { modelId: 97681, markaAdi: "AUDI", modelAdi: "A4 40 TDI QUATTRO 204 ADVANCED STRONIC P" }, { modelId: 97762, markaAdi: "AUDI", modelAdi: "A4 40 TDI QUATTRO 204 S LINE STRONIC PI" }, { modelId: 96957, markaAdi: "AUDI", modelAdi: "A4 45 TFSI QUATTRO 265 ADVANCED STRONIC PI" }, { modelId: 96958, markaAdi: "AUDI", modelAdi: "A4 45 TFSI QUATTRO 265 SLINE STRONIC PI" }, { modelId: 97758, markaAdi: "AUDI", modelAdi: "A4 ALLROAD 40 TDI QUATTRO 204 STRONIC PI" }, { modelId: 98452, markaAdi: "AUDI", modelAdi: "A5 COUPE 40 TDI QUATTRO 204 ADVANCED STR PI" }, { modelId: 96961, markaAdi: "AUDI", modelAdi: "A5 SPORTBACK 45 TFSIQUATTRO265ADVANCED STR PI" }, { modelId: 95719, markaAdi: "AUDI", modelAdi: "A5SPORTBACK 45TFSI 245 QUATTROADVANCED STR PI" }, { modelId: 92965, markaAdi: "AUDI", modelAdi: "A6 2.0 40 TDI QUATTRO 204 SPORT STRONIC" }, { modelId: 92131, markaAdi: "AUDI", modelAdi: "A6 3.0 50 TDI QUATTRO TIPTRONIC SPORT" }, { modelId: 92964, markaAdi: "AUDI", modelAdi: "A6 40 2.0 TDI QUATTRO 204 DESIGN STRONIC" }, { modelId: 96966, markaAdi: "AUDI", modelAdi: "A6 45 TFSI QUATTRO 265 DESIGN STRONIC" }, { modelId: 94256, markaAdi: "AUDI", modelAdi: "A6 50 3.0 TDI 286 QUATTRO DESIGN TIPTRONIC" }, { modelId: 93113, markaAdi: "AUDI", modelAdi: "A6 AVANT 40 2.0 TDI 204 QUATTRO DESIGN STR" }, { modelId: 96965, markaAdi: "AUDI", modelAdi: "A6 SEDAN 45 TFSI QUATTRO 265 SPORT STRONIC" }, { modelId: 93545, markaAdi: "AUDI", modelAdi: "A7 SPORTBACK 2.0 40 TDI QUATTRO 204 STRONIC" }, { modelId: 91530, markaAdi: "AUDI", modelAdi: "A7 SPORTBACK 3.0 50 TDI QUATTRO (286) TIPTRON" }, { modelId: 91350, markaAdi: "AUDI", modelAdi: "A8L 3.0 50 TDI (286) QUATTRO TIPTRONIC" }, { modelId: 98678, markaAdi: "AUDI", modelAdi: "Q2 35 TFSI 150 ADVANCED STRONIC PI" }, { modelId: 98684, markaAdi: "AUDI", modelAdi: "Q3 35 TFSI 150 ADVANCED STRONIC" }, { modelId: 98687, markaAdi: "AUDI", modelAdi: "Q5 40 TDI QUATTRO 204 ADVANCED STRONIC PI" }, { modelId: 94797, markaAdi: "AUDI", modelAdi: "Q7 S LINE 50 TDI QUATTRO" }, { modelId: 92390, markaAdi: "AUDI", modelAdi: "Q8 3.0 50 TDI QUATTRO (286) TIPTRONIC" }, { modelId: 94801, markaAdi: "BMW", modelAdi: "116d 1.5 116 SPORT LINE" }, { modelId: 93855, markaAdi: "BMW", modelAdi: "118i 1.5 140 FIRST EDITION M SPORT" }, { modelId: 94799, markaAdi: "BMW", modelAdi: "118i 1.5 140 SPORT LINE" }, { modelId: 98456, markaAdi: "BMW", modelAdi: "216d GRAN COUPE SPORT LINE" }, { modelId: 98453, markaAdi: "BMW", modelAdi: "218i GRAN COUPE SPORT LINE" }, { modelId: 97141, markaAdi: "BMW", modelAdi: "320i SEDAN 1.6 170 LUXURY LINE" }, { modelId: 97140, markaAdi: "BMW", modelAdi: "320i SEDAN 1.6 170 SPORT LINE" }, { modelId: 81379, markaAdi: "BMW", modelAdi: "418i GRAN COUPE" }, { modelId: 85418, markaAdi: "BMW", modelAdi: "420d XDRIVE GRAN COUPE 2.0 (190) SPORT LINE" }, { modelId: 89940, markaAdi: "BMW", modelAdi: "420d XDRIVE GRAN COUPE 2.0 190 M SPORT" }, { modelId: 90880, markaAdi: "BMW", modelAdi: "430i XDRIVE GRAN COUPE" }, { modelId: 87357, markaAdi: "BMW", modelAdi: "520d XDRIVE 2.0 190 LUXURY LINE" }, { modelId: 97766, markaAdi: "BMW", modelAdi: "520d XDRIVE LCI 2.0 190 SPECIALEDITION LUX.LI" }, { modelId: 87358, markaAdi: "BMW", modelAdi: "520d XDRIVE SEDAN 2.0 190 M SPORT" }, { modelId: 97763, markaAdi: "BMW", modelAdi: "520i SEDAN LCI 1.6 170 LUXURY LINE" }, { modelId: 96163, markaAdi: "BMW", modelAdi: "520i SEDAN LCI 1.6 170 M SPORT" }, { modelId: 98459, markaAdi: "BMW", modelAdi: "530i XDRIVE SEDAN LUXURY LINE" }, { modelId: 98123, markaAdi: "BMW", modelAdi: "iX3 IMPRESSIVE" }, { modelId: 82138, markaAdi: "BMW", modelAdi: "X1 SDRIVE 16d 1.5 (116)" }, { modelId: 85488, markaAdi: "BMW", modelAdi: "X1 SDRIVE16d 1.5 (116) M SPORT" }, { modelId: 85487, markaAdi: "BMW", modelAdi: "X1 SDRIVE16d 1.5 (116) X LINE" }, { modelId: 85482, markaAdi: "BMW", modelAdi: "X1 SDRIVE18i 1.5 (136) X LINE" }, { modelId: 91184, markaAdi: "BMW", modelAdi: "X2 SDRIVE 18i 1.5 140" }, { modelId: 91537, markaAdi: "BMW", modelAdi: "X3 SDRIVE20i 1.6 (170) M SPORT" }, { modelId: 91536, markaAdi: "BMW", modelAdi: "X3 SDRIVE20i 1.6 (170) X LINE" }, { modelId: 89092, markaAdi: "CHRYSLER", modelAdi: "JEEP COMPASS 1.4 170 9ATX LIMITED AWD E6 S1" }, { modelId: 90912, markaAdi: "CHRYSLER", modelAdi: "JEEP RENEGADE 1.4 140HP LIMITED MANUEL" }, { modelId: 90913, markaAdi: "CHRYSLER", modelAdi: "JEEP RENEGADE 1.4 MULTIAIR2 TURBO 9ATX AWD LIMITED" }, { modelId: 87435, markaAdi: "CHRYSLER", modelAdi: "JEEP RENEGADE 1.6 M.JET 120 HP DDCT LIMITED" }, { modelId: 90892, markaAdi: "CHRYSLER", modelAdi: "JEEP RENEGADE 1.6 MULTIJET LIMITED" }, { modelId: 90914, markaAdi: "CHRYSLER", modelAdi: "JEEP RENEGADE 2.0 M.JET 170HP 9AT TRAILHAWK" }, { modelId: 1849, markaAdi: "CHRYSLER", modelAdi: "JEEP WRANGLER RUBICON 2.8 CRD 4 KAPI" }, { modelId: 97275, markaAdi: "CITROEN", modelAdi: "C-ELYSEE 1.5 FEEL BLUEHDI 100 E6.3" }, { modelId: 87441, markaAdi: "CITROEN", modelAdi: "C-ELYSEE LIVE 1.2 PURETECH 82" }, { modelId: 92986, markaAdi: "CITROEN", modelAdi: "C3 AIRCROSS SHINE 1.5 BLUEHDI 120 S&S EAT6" }, { modelId: 92980, markaAdi: "CITROEN", modelAdi: "C3 FEEL 1.2 PURETECH 110 EAT6" }, { modelId: 93343, markaAdi: "CITROEN", modelAdi: "C3 LIVE 1.2 PURETECH 110 S&S EAT6" }, { modelId: 93580, markaAdi: "CITROEN", modelAdi: "C5 AIRCROSS FEEL ADVENTURE 1.5 BLUEHDI 130 EA" }, { modelId: 96183, markaAdi: "CITROEN", modelAdi: "C5AIRCROSS SHINEBOLD 1.5 BLUEHDI 130 S&S EAT8" }, { modelId: 94485, markaAdi: "DACIA", modelAdi: "DOKKER COMBI AMBIANCE 1.5 BLUEDCI 95" }, { modelId: 94487, markaAdi: "DACIA", modelAdi: "DOKKER VAN AMBIANCE 1.5 BLUEDCI 95" }, { modelId: 96809, markaAdi: "DACIA", modelAdi: "DOKKER VAN AMBIANCE ECO-G 110" }, { modelId: 98910, markaAdi: "DACIA", modelAdi: "DUSTER COMFORT 1.5 BLUEDCI 115 4x4 E6DFULL" }, { modelId: 98909, markaAdi: "DACIA", modelAdi: "DUSTER COMFORT 1.5 BLUEDCI 95 4X2 E6DFULL" }, { modelId: 99156, markaAdi: "DACIA", modelAdi: "LODGY AMBIANCE 1.5 BLUEDCI 95 7 K. E6DFUL" }, { modelId: 99158, markaAdi: "DACIA", modelAdi: "LODGY STEPWAY 1.5 BLUEDCI 115 7 K. E6DFULL" }, { modelId: 98555, markaAdi: "DACIA", modelAdi: "SANDERO COMFORT 1.0 TURBO X-TRONIC 90" }, { modelId: 98559, markaAdi: "DACIA", modelAdi: "SANDERO STEPWAY COMFORT 1.0 TURBO X-TRONIC 90" }, { modelId: 93308, markaAdi: "DS", modelAdi: "DS 7 CROSSBACK 1.6 PURETECH 225 EAT8 SO CHIC" }, { modelId: 95553, markaAdi: "DS", modelAdi: "DS7 CROSSBACK BLUEHDI 130 EAT8 SO CHIC OPERA" }, { modelId: 59707, markaAdi: "FIAT", modelAdi: "500C LOUNGE 1.2 FIRE 69 DUALOGIC" }, { modelId: 82822, markaAdi: "FIAT", modelAdi: "500L POPSTAR 1.3 M.JET 95 DUALOGIC E6" }, { modelId: 82821, markaAdi: "FIAT", modelAdi: "500L POPSTAR 1.3 M.JET 95 E6" }, { modelId: 84741, markaAdi: "FIAT", modelAdi: "500X CROSS 1.4 MULTI AIR 140 DCT" }, { modelId: 93953, markaAdi: "FIAT", modelAdi: "DOBLO CARGO 1.3 M.JET 95 E6D" }, { modelId: 93955, markaAdi: "FIAT", modelAdi: "DOBLO CARGO MAXI 1.3 M.JET 95 E6D" }, { modelId: 93956, markaAdi: "FIAT", modelAdi: "DOBLO CARGO MAXI 1.6 M.JET 120 E6D" }, { modelId: 93959, markaAdi: "FIAT", modelAdi: "DOBLO CARGO MAXI XL 1.6 M.JET 120 E6D" }, { modelId: 93954, markaAdi: "FIAT", modelAdi: "DOBLO CARGO PLUS 1.3 M.JET 95 E6D" }, { modelId: 93957, markaAdi: "FIAT", modelAdi: "DOBLO CARGO PLUS MAXI 1.3 M.JET 95 E6D" }, { modelId: 93958, markaAdi: "FIAT", modelAdi: "DOBLO CARGO PLUS MAXI 1.6 M.JET 120 E6D" }, { modelId: 93960, markaAdi: "FIAT", modelAdi: "DOBLO CARGO PLUS MAXI XL 1.6 M.JET 120 E6D" }, { modelId: 93961, markaAdi: "FIAT", modelAdi: "DOBLO COMBI EASY 1.3 M.JET 95 E6D" }, { modelId: 93965, markaAdi: "FIAT", modelAdi: "DOBLO COMBI EASY 1.6 M.JET 105 E6D" }, { modelId: 93863, markaAdi: "FIAT", modelAdi: "DUCATO VAN 8M3 2.3 140 E6D" }, { modelId: 94276, markaAdi: "FIAT", modelAdi: "DUCATO VAN MAXI 11.5M3 2.3 140 E6D" }, { modelId: 94277, markaAdi: "FIAT", modelAdi: "DUCATO VAN MAXI 13M3 2.3 140 E6D" }, { modelId: 94278, markaAdi: "FIAT", modelAdi: "DUCATO VAN MAXI 15M3 2.3 140 E6D" }, { modelId: 93868, markaAdi: "FIAT", modelAdi: "DUCATO VAN MAXI 17M3 2.3 140 E6D" }, { modelId: 97755, markaAdi: "FIAT", modelAdi: "EGEA CROSS 1.3 M.JET 95 HP STREET E6F" }, { modelId: 97751, markaAdi: "FIAT", modelAdi: "EGEA HB 1.0 FIREFLY 100 HP URBAN E6F" }, { modelId: 97748, markaAdi: "FIAT", modelAdi: "EGEA HB 1.3 M.JET 95 HP STREET E6F" }, { modelId: 97750, markaAdi: "FIAT", modelAdi: "EGEA HB 1.3 M.JET 95 HP URBAN E6F" }, { modelId: 97747, markaAdi: "FIAT", modelAdi: "EGEA SEDAN 1.0 FIREFLY 100 HP URBAN E6F" }, { modelId: 97745, markaAdi: "FIAT", modelAdi: "EGEA SEDAN 1.3 M.JET 95 HP EASY E6F" }, { modelId: 97746, markaAdi: "FIAT", modelAdi: "EGEA SEDAN 1.3 M.JET 95 HP URBAN E6F" }, { modelId: 97754, markaAdi: "FIAT", modelAdi: "EGEA SW 1.0 FIREFLY 100 HP URBAN E6F" }, { modelId: 97752, markaAdi: "FIAT", modelAdi: "EGEA SW 1.3 M.JET 95 HP STREET E6F" }, { modelId: 97753, markaAdi: "FIAT", modelAdi: "EGEA SW 1.3 M.JET 95 HP URBAN E6F" }, { modelId: 90133, markaAdi: "FIAT", modelAdi: "FIORINO CARGO 1.3 M.JET 95 E6" }, { modelId: 90134, markaAdi: "FIAT", modelAdi: "FIORINO CARGO PLUS 1.3 M.JET 95 E6" }, { modelId: 93974, markaAdi: "FIAT", modelAdi: "FIORINO COMBI POP 1.3 M.JET 95 E6D" }, { modelId: 90140, markaAdi: "FIAT", modelAdi: "FIORINO COMBI SAFELINE 1.3 M.JET 95 E6" }, { modelId: 97471, markaAdi: "FORD", modelAdi: "FIESTA STYLE 1.0 ECOBOOST 95 6AT" }, { modelId: 92309, markaAdi: "FORD", modelAdi: "FOCUS TITANIUM 1.5 123 4 KAPI 6S AT E6.2" }, { modelId: 92320, markaAdi: "FORD", modelAdi: "FOCUS TITANIUM 1.5 ECOBLUE 120 4 KAPI 8S AT E6.2" }, { modelId: 92324, markaAdi: "FORD", modelAdi: "FOCUS TITANIUM 1.5 ECOBLUE 120 S.WAGON 8S AT" }, { modelId: 92305, markaAdi: "FORD", modelAdi: "FOCUS TREND X 1.5 123 4 KAPI 6S AT E6.2" }, { modelId: 92314, markaAdi: "FORD", modelAdi: "FOCUS TREND X 1.5 ECOBLUE 120 4 KAPI 8S AT" }, { modelId: 92313, markaAdi: "FORD", modelAdi: "FOCUS TREND X 1.5 ECOBLUE 120 4 KAPI E6.2" }, { modelId: 92318, markaAdi: "FORD", modelAdi: "FOCUS TREND X 1.5 ECOBLUE 120 S.WAGON 8S AT" }, { modelId: 95742, markaAdi: "FORD", modelAdi: "KUGA ST-LINE 1.5 ECOBLUE 120 8AT E6.2" }, { modelId: 95741, markaAdi: "FORD", modelAdi: "KUGA TITANIUM 1.5 ECOBLUE 120 8AT E6.2" }, { modelId: 96196, markaAdi: "FORD", modelAdi: "PUMA STYLE 1.0 ECOBOOST 125 7AT" }, { modelId: 86626, markaAdi: "FORD", modelAdi: "TOURNEO CONNECT KOMBI 1.5 TDCI 120 TITANIUM" }, { modelId: 93894, markaAdi: "FORD", modelAdi: "TOURNEO COURIER JOURNEY 1.5 TDCI 100 E6.2 TIT" }, { modelId: 93887, markaAdi: "FORD", modelAdi: "TOURNEO COURIER KOMBI .5 TDCI 75 E6.2 TREND" }, { modelId: 93888, markaAdi: "FORD", modelAdi: "TOURNEO COURIER KOMBI 1.5TDCI 75 E6.2 DELUXE" }, { modelId: 90062, markaAdi: "FORD", modelAdi: "TOURNEO CUSTOM 2.0 ECOBLUE 170 320L TITANIUM 8+1" }, { modelId: 96983, markaAdi: "FORD", modelAdi: "TOURNEO CUSTOM 320S UPGRADE 130 TREND (8+1)" }, { modelId: 96984, markaAdi: "FORD", modelAdi: "TOURNEO CUSTOM 320S UPGRADE 130 TREND 6AT (8+1)" }, { modelId: 96987, markaAdi: "FORD", modelAdi: "TOURNEO CUSTOM 8+1 320L UPGRADE TREND 130" }, { modelId: 90063, markaAdi: "FORD", modelAdi: "TOURNEO CUSTOM ECOBLUE 170 320L OV TITANIUM 8+1" }, { modelId: 93892, markaAdi: "FORD", modelAdi: "TOURNEOCOURIER KOMBI 1.5 TDCI 100 E6.2 DELUXE" }, { modelId: 93893, markaAdi: "FORD", modelAdi: "TOURNEOCOURIERJOURNEY 1.5 TDCI 100 E6.2 TREND" }, { modelId: 93895, markaAdi: "FORD", modelAdi: "TOURNEOCOURIERJOURNEY1.5TDCI100 E6.2 TIT.PLUS" }, { modelId: 90048, markaAdi: "FORD", modelAdi: "TRANSIT CUSTOM KOMBI ECOBLUE 130 320S TREND 5+1" }, { modelId: 92494, markaAdi: "FORD", modelAdi: "TRANSIT CUSTOM KOMBI VAN 2.0 ECOBLUE 170 320S DELUXE AT" }, { modelId: 94129, markaAdi: "FORD", modelAdi: "TRANSIT K.NET CIFT K.350M 170 TRENDKASALIE6.2" }, { modelId: 94143, markaAdi: "FORD", modelAdi: "TRANSIT VAN 350L 12.4 ECOBLUE 170 TREND E6.2" }, { modelId: 93662, markaAdi: "HONDA", modelAdi: "CIVIC 4D EXECUTIVE+ 1.5 182 OV" }, { modelId: 85543, markaAdi: "HONDA", modelAdi: "CIVIC SEDAN ECO ELEGANCE 1.6 (125) OV" }, { modelId: 92200, markaAdi: "HONDA", modelAdi: "CR-V 1.5T ELEGANCE OV" }, { modelId: 92137, markaAdi: "HONDA", modelAdi: "CR-V 1.5T EXECUTIVE OV" }, { modelId: 92201, markaAdi: "HONDA", modelAdi: "CR-V 1.5T EXECUTIVE+ OV" }, { modelId: 99141, markaAdi: "HYUNDAI", modelAdi: "ELANTRA 1.6 MPI (123) CVT STYLE COMFORT" }, { modelId: 95250, markaAdi: "HYUNDAI", modelAdi: "i10 1.0 MPI JUMP AMT" }, { modelId: 95251, markaAdi: "HYUNDAI", modelAdi: "i10 1.2 MPI STYLE AMT" }, { modelId: 97005, markaAdi: "HYUNDAI", modelAdi: "i20 1.4 MPI 100 JUMP 6AT" }, { modelId: 97006, markaAdi: "HYUNDAI", modelAdi: "i20 1.4 MPI 100 STYLE 6AT" }, { modelId: 97907, markaAdi: "HYUNDAI", modelAdi: "KONA FL 1.6 CRDI 48V MHEV ELITE DCT" }, { modelId: 97906, markaAdi: "HYUNDAI", modelAdi: "KONA FL 1.6 CRDI 48V MHEV STYLE DCT" }, { modelId: 94736, markaAdi: "HYUNDAI", modelAdi: "TUCSON FL 1.6 CRDI DCT SMART" }, { modelId: 91992, markaAdi: "HYUNDAI", modelAdi: "TUCSON FL 1.6 CRDI ELITE 4x4 DCT" }, { modelId: 91991, markaAdi: "HYUNDAI", modelAdi: "TUCSON FL 1.6 CRDI ELITE DCT" }, { modelId: 91993, markaAdi: "HYUNDAI", modelAdi: "TUCSON FL 1.6 CRDI ELITE PLUS 4x4 DCT" }, { modelId: 91990, markaAdi: "HYUNDAI", modelAdi: "TUCSON FL 1.6 CRDI STYLE DCT 4X2" }, { modelId: 93156, markaAdi: "HYUNDAI", modelAdi: "TUCSON FL 1.6 CRDI STYLE PLUS DCT" }, { modelId: 97899, markaAdi: "JAGUAR", modelAdi: "F-PACE AWD SE 2.0 D204" }, { modelId: 91246, markaAdi: "JAGUAR", modelAdi: "I-PACE SE EV400 AWD" }, { modelId: 82947, markaAdi: "JAGUAR", modelAdi: "XF PRESTIGE 2.0d AWD" }, { modelId: 96817, markaAdi: "KIA", modelAdi: "CEED ELEGANCE 1.6 DIZEL 115 DCT" }, { modelId: 96818, markaAdi: "KIA", modelAdi: "CEED ELEGANCE ROOF PAKET 1.6 DIZEL 115 DCT" }, { modelId: 91926, markaAdi: "KIA", modelAdi: "RIO ELEGANCE 1.4 100 6AT" }, { modelId: 92482, markaAdi: "KIA", modelAdi: "SPORTAGE ELEGANCE 4x4 1.6 DIZEL 136 DCT" }, { modelId: 92483, markaAdi: "KIA", modelAdi: "SPORTAGE PRESTIGE 1.6 DIZEL 136 DCT 4X2" }, { modelId: 98015, markaAdi: "LAND ROVER", modelAdi: "DISCOVERY 2.0 P300 HSE" }, { modelId: 98008, markaAdi: "LAND ROVER", modelAdi: "DISCOVERY SPORT 2.0 D163 S" }, { modelId: 96803, markaAdi: "LAND ROVER", modelAdi: "DISCOVERY SPORT HSE 1.5 PHEV300" }, { modelId: 95545, markaAdi: "LEXUS", modelAdi: "NX 300H 4x4 BUSINESS PLUS" }, { modelId: 92158, markaAdi: "LEXUS", modelAdi: "RX 300 4x4 EXECUTIVE" }, { modelId: 84765, markaAdi: "MAZDA", modelAdi: "3 HB 1.5 SKY-D POWER SENSE AT" }, { modelId: 84760, markaAdi: "MAZDA", modelAdi: "3 SEDAN 1.5 SKY-D POWER SENSE AT" }, { modelId: 92686, markaAdi: "MAZDA", modelAdi: "6 2.0 SKY-G POWER SENSE AT" }, { modelId: 87662, markaAdi: "MAZDA", modelAdi: "CX-3 1.5 SKY-D 4x4 POWER SENSE PLUS AT" }, { modelId: 93592, markaAdi: "MAZDA", modelAdi: "CX-5 POWER SENSE PLUS 2.0 SKY-G 4x4 AT" }, { modelId: 94647, markaAdi: "MERCEDES", modelAdi: "A 200 AMG 1.33 (163) 7G-DCT" }, { modelId: 93247, markaAdi: "MERCEDES", modelAdi: "A 200 SEDAN 1.33 (163) 7G-DCT AMG" }, { modelId: 93131, markaAdi: "MERCEDES", modelAdi: "B 180 d 1.5 (116) PROGRESSIVE" }, { modelId: 93130, markaAdi: "MERCEDES", modelAdi: "B 180 d 1.5 (116) STYLE" }, { modelId: 91575, markaAdi: "MERCEDES", modelAdi: "C 200 4MATIC FL 1.5 (184) AMG 9G-TRONIC" }, { modelId: 91754, markaAdi: "MERCEDES", modelAdi: "C 200 4MATIC FL 1.5 (184) EXCLUSIVE 9G-TRONIC" }, { modelId: 91578, markaAdi: "MERCEDES", modelAdi: "C 200 d FL 1.6 (160) AMG 9G-TRONIC" }, { modelId: 91576, markaAdi: "MERCEDES", modelAdi: "C 200 d FL 1.6 (160) COMFORT 9G-TRONIC" }, { modelId: 91577, markaAdi: "MERCEDES", modelAdi: "C 200 d FL 1.6 (160) EXCLUSIVE 9G-TRONIC" }, { modelId: 93243, markaAdi: "MERCEDES", modelAdi: "CLA 180 d 1.5 (116) AMG" }, { modelId: 93242, markaAdi: "MERCEDES", modelAdi: "CLA 200 1.33 AMG" }, { modelId: 97694, markaAdi: "MERCEDES", modelAdi: "E 200 d FL AMG" }, { modelId: 97693, markaAdi: "MERCEDES", modelAdi: "E 200 d FL EXCLUSIVE" }, { modelId: 96521, markaAdi: "MERCEDES", modelAdi: "E 220 d FL 4MATIC EDITION 1 EXCLUSIVE" }, { modelId: 96522, markaAdi: "MERCEDES", modelAdi: "E 220 d FL 4MATIC EDTION 1 AMG" }, { modelId: 98137, markaAdi: "MERCEDES", modelAdi: "E 300 d FL 4MATIC AMG" }, { modelId: 98136, markaAdi: "MERCEDES", modelAdi: "E 300 d FL 4MATIC EXCLUSIVE" }, { modelId: 96033, markaAdi: "MERCEDES", modelAdi: "GLA 200 1.33 163 7G-DCT AMG" }, { modelId: 96032, markaAdi: "MERCEDES", modelAdi: "GLA 200 1.33 163 7G-DCT PROGRESSIVE" }, { modelId: 95753, markaAdi: "MERCEDES", modelAdi: "GLB 200 1.33 163 7G-DCT AMG" }, { modelId: 93679, markaAdi: "MERCEDES", modelAdi: "GLC 300 d 4MATIC 2.0  AMG 9G-TRONIC" }, { modelId: 97692, markaAdi: "MERCEDES", modelAdi: "S 400 d 4MATIC L INSPIRATION" }, { modelId: 81441, markaAdi: "MERCEDES", modelAdi: "VITO TOURER 538O 116 BLUETEC PRO PLUS E6" }, { modelId: 94032, markaAdi: "MINI", modelAdi: "MINI COOPER 5 KAPI 1.5 136 CLASSIC" }, { modelId: 94035, markaAdi: "MINI", modelAdi: "MINI COOPER COUNTRYMAN 1.5 136 CLASSIC" }, { modelId: 91216, markaAdi: "MITSUBISHI", modelAdi: "ECLIPSE CROSS 1.5 2WD INTENSE CVT" }, { modelId: 87225, markaAdi: "MITSUBISHI", modelAdi: "L200 2.4 DI-D CIFT KABIN KAMYONET 4x4 TORNADO AT" }, { modelId: 90095, markaAdi: "MITSUBISHI", modelAdi: "L200 CIFT KABIN KAMYONET 4x2 AT TORNADO E6" }, { modelId: 90094, markaAdi: "MITSUBISHI", modelAdi: "L200 CIFT KABIN KAMYONET 4x2 TORNADO MT" }, { modelId: 90097, markaAdi: "MITSUBISHI", modelAdi: "L200 CIFT KABIN KAMYONET 4x4 MT TORNADO E6" }, { modelId: 54421, markaAdi: "MITSUBISHI", modelAdi: "OUTLANDER 2.0 INSTYLE CVT" }, { modelId: 98344, markaAdi: "NISSAN", modelAdi: "JUKE 1.0 DIG-T 115 DCT PLATINUM" }, { modelId: 98143, markaAdi: "NISSAN", modelAdi: "JUKE 1.0 DIG-T 115 DCT TEKNA" }, { modelId: 98481, markaAdi: "NISSAN", modelAdi: "MICRA 1.0 IG-T 92 CVT TEKNA" }, { modelId: 98732, markaAdi: "NISSAN", modelAdi: "QASHQAI 1.3 DIG-T 158 DCT SKY PACK PLUS E6DF" }, { modelId: 98488, markaAdi: "NISSAN", modelAdi: "X-TRAIL 1.3 DIG-T 158 DCT PLATINUM 5 KISILIK" }, { modelId: 94342, markaAdi: "OPEL", modelAdi: "ASTRA HB 1.5 122 DIZEL AT9 EDITION" }, { modelId: 94337, markaAdi: "OPEL", modelAdi: "CORSA 1.2 100 AT8 EDITION" }, { modelId: 94338, markaAdi: "OPEL", modelAdi: "CORSA 1.5 102 DIZEL MT6 EDITION" }, { modelId: 97839, markaAdi: "OPEL", modelAdi: "CROSSLAND 1.5 DIZEL AT6 120 ESSENTIAL" }, { modelId: 92561, markaAdi: "OPEL", modelAdi: "CROSSLAND X  1.5 120 DIZEL S&S AT6 ENJOY" }, { modelId: 92564, markaAdi: "OPEL", modelAdi: "CROSSLAND X 1.5 DIZEL 120 S&S AT6 EXCELENCE" }, { modelId: 91470, markaAdi: "OPEL", modelAdi: "CROSSLAND X EXCELLENCE 1.2 110 HP S&S AT6" }, { modelId: 93100, markaAdi: "OPEL", modelAdi: "GRANDLAND X 1.5 130 DIZEL S&S AT6 ENJOY" }, { modelId: 97484, markaAdi: "OPEL", modelAdi: "INSIGNIA 1.5 DIZEL 122 AT8 EDITION" }, { modelId: 97486, markaAdi: "OPEL", modelAdi: "INSIGNIA 1.5 DIZEL 122 AT8 ULTIMATE" }, { modelId: 85773, markaAdi: "OPEL", modelAdi: "MOKKA X 1.4 140 AT FWD EXCELLENCE" }, { modelId: 86671, markaAdi: "OPEL", modelAdi: "MOKKA X 1.4 140 AT FWD S&S ENJOY" }, { modelId: 90289, markaAdi: "OPEL", modelAdi: "MOKKA X 1.6 DIZEL 136 AT FWD BLACK EDITION" }, { modelId: 85777, markaAdi: "OPEL", modelAdi: "MOKKA X 1.6 DIZEL 136 AT FWD EXCELLENCE" }, { modelId: 85779, markaAdi: "OPEL", modelAdi: "MOKKA X 1.6 DIZEL 136 AWD EXCELLENCE" }, { modelId: 94664, markaAdi: "PEUGEOT", modelAdi: "2008 ACTIVE 1.2 PURETECH 130 EAT8" }, { modelId: 94362, markaAdi: "PEUGEOT", modelAdi: "2008 ACTIVE 1.5 BLUEHDI 130 EAT8" }, { modelId: 94363, markaAdi: "PEUGEOT", modelAdi: "2008 ALLURE 1.5 BLUEHDI 130 EAT8" }, { modelId: 97844, markaAdi: "PEUGEOT", modelAdi: "2008 GT 1.5 BLUEHDI 130 EAT8" }, { modelId: 94364, markaAdi: "PEUGEOT", modelAdi: "2008 GT-LINE 1.5 BLUEHDI 130 EAT8" }, { modelId: 98153, markaAdi: "PEUGEOT", modelAdi: "208 ACTIVE 1.5 BLUEHDI 130 EAT8" }, { modelId: 97511, markaAdi: "PEUGEOT", modelAdi: "3008 ACTIVE PRIME 1.5 BLUEHDI 130 EAT8" }, { modelId: 97512, markaAdi: "PEUGEOT", modelAdi: "3008 ALLURE 1.5 BLUEHDI 130 EAT8" }, { modelId: 97514, markaAdi: "PEUGEOT", modelAdi: "3008 GT 1.5 BLUEHDI 130 EAT8" }, { modelId: 97513, markaAdi: "PEUGEOT", modelAdi: "3008 GT SELECTION 1.5 BLUE HDI 130 EAT8" }, { modelId: 97520, markaAdi: "PEUGEOT", modelAdi: "308 STYLE TECH 1.5 BLUEHDI 130 EAT8" }, { modelId: 97517, markaAdi: "PEUGEOT", modelAdi: "5008 ALLURE 1.5 BLUEHDI 130 EAT8" }, { modelId: 97519, markaAdi: "PEUGEOT", modelAdi: "5008 GT 1.5 BLUEHDI 130 EAT8" }, { modelId: 97518, markaAdi: "PEUGEOT", modelAdi: "5008 GT SELECTION 1.5 BLUEHDI 130 EAT8" }, { modelId: 93692, markaAdi: "PEUGEOT", modelAdi: "508 ALLURE 1.5 BLUEHDI 130 EAT8" }, { modelId: 93993, markaAdi: "PEUGEOT", modelAdi: "BOXER VAN L3H2 2.2 BLUEHDI 140 13M3" }, { modelId: 90553, markaAdi: "PEUGEOT", modelAdi: "BOXER VAN L4H2 2.0 BLUEHDI 160 (15M3)" }, { modelId: 94167, markaAdi: "PORSCHE", modelAdi: "CAYENNE 3.0 (340)" }, { modelId: 96781, markaAdi: "RANGE ROVER", modelAdi: "EVOQUE 1.5 PHEV300 SE" }, { modelId: 91853, markaAdi: "RANGE ROVER", modelAdi: "SPORT 2.0 PHEV404 HSE DYNAMIC" }, { modelId: 97865, markaAdi: "RANGE ROVER", modelAdi: "VELAR 2.0 D204 S" }, { modelId: 98157, markaAdi: "RENAULT", modelAdi: "CAPTUR JOY 1.3 TCE EDC 140" }, { modelId: 98182, markaAdi: "RENAULT", modelAdi: "CAPTUR TOUCH 1.3 TCE EDC 140" }, { modelId: 97855, markaAdi: "RENAULT", modelAdi: "CLIO ICON 1.0 TCE X-TRONIC 90" }, { modelId: 97848, markaAdi: "RENAULT", modelAdi: "CLIO JOY 1.0 SCE 65" }, { modelId: 97849, markaAdi: "RENAULT", modelAdi: "CLIO JOY 1.0 TCE 90" }, { modelId: 97851, markaAdi: "RENAULT", modelAdi: "CLIO JOY 1.0 TCE X-TRONIC 90" }, { modelId: 97852, markaAdi: "RENAULT", modelAdi: "CLIO TOUCH 1.0 TCE 90" }, { modelId: 97854, markaAdi: "RENAULT", modelAdi: "CLIO TOUCH 1.0 TCE X-TRONIC 90" }, { modelId: 93259, markaAdi: "RENAULT", modelAdi: "KADJAR TOUCH ROOF 1.3 TCE 160 EDC" }, { modelId: 94369, markaAdi: "RENAULT", modelAdi: "KANGOO EXPRESS CARGO MAXI JOY 1.5 BLUEDCI 95" }, { modelId: 96224, markaAdi: "RENAULT", modelAdi: "KANGOO MULTIX TOUCH 1.5 BLUEDCI 95" }, { modelId: 97158, markaAdi: "RENAULT", modelAdi: "KOLEOS ICON 1.3 TCE EDC 160" }, { modelId: 93431, markaAdi: "RENAULT", modelAdi: "MEGANE HB TOUCH 1.3 TCE 140 EDC" }, { modelId: 97861, markaAdi: "RENAULT", modelAdi: "MEGANE SEDAN ICON 1.3 TCE EDC 140 FAZ2" }, { modelId: 97862, markaAdi: "RENAULT", modelAdi: "MEGANE SEDAN ICON 1.5 BLUEDCI EDC 115 FAZ2" }, { modelId: 97858, markaAdi: "RENAULT", modelAdi: "MEGANE SEDAN JOY 1.3 TCE EDC 140 FAZ2" }, { modelId: 97859, markaAdi: "RENAULT", modelAdi: "MEGANE SEDAN JOY 1.5 BLUEDCI EDC 115 FAZ2" }, { modelId: 98738, markaAdi: "RENAULT", modelAdi: "MEGANE SEDAN TOUCH 1.3 TCE EDC 140 FAZ2" }, { modelId: 97860, markaAdi: "RENAULT", modelAdi: "MEGANE SEDAN TOUCH 1.5 BLUEDCI EDC 115 FAZ2" }, { modelId: 93996, markaAdi: "RENAULT", modelAdi: "SYMBOL JOY 0.9 TCE 90" }, { modelId: 94367, markaAdi: "RENAULT", modelAdi: "SYMBOL JOY 1.5 BLUEDCI 95" }, { modelId: 94372, markaAdi: "RENAULT", modelAdi: "TALISMAN TOUCH 1.3 TCE EDC 160" }, { modelId: 96778, markaAdi: "RENAULT", modelAdi: "ZOE ZEN 80 KW ZE 50" }, { modelId: 97677, markaAdi: "SEAT", modelAdi: "ARONA 1.0 ECOTSI 110 DSG S&S XCELLENCE" }, { modelId: 96956, markaAdi: "SEAT", modelAdi: "ATECA 1.5 ECOTSI ACT 150 DSG S&S FR FL" }, { modelId: 96955, markaAdi: "SEAT", modelAdi: "ATECA 1.5 ECOTSI ACT 150 DSG S&S XPERIENCE" }, { modelId: 98120, markaAdi: "SEAT", modelAdi: "IBIZA 1.0 ECOTSI 110 DSG STYLE" }, { modelId: 94868, markaAdi: "SKODA", modelAdi: "KAROQ 1.5 TSI 150 ACT DSG PREMIUM" }, { modelId: 95768, markaAdi: "SKODA", modelAdi: "KAROQ 1.5 TSI ACT 150 DSG PRESTIGE" }, { modelId: 94866, markaAdi: "SKODA", modelAdi: "KODIAQ 1.5 TSI 150 ACT DSG PREMIUM" }, { modelId: 92228, markaAdi: "SKODA", modelAdi: "KODIAQ 1.5 TSI ACT DSG PRESTIGE" }, { modelId: 97877, markaAdi: "SKODA", modelAdi: "OCTAVIA ELITE 1.0 TSI e-TEC 110 DSG" }, { modelId: 97878, markaAdi: "SKODA", modelAdi: "OCTAVIA ELITE 1.5 TSI ACT e-TEC 150 DSG" }, { modelId: 97879, markaAdi: "SKODA", modelAdi: "OCTAVIA PREMIUM 1.0 TSI e-TEC 110 DSG" }, { modelId: 97880, markaAdi: "SKODA", modelAdi: "OCTAVIA PREMIUM 1.5 TSI ACT e-TEC 150 DSG" }, { modelId: 97532, markaAdi: "SKODA", modelAdi: "SCALA 1.0 TSI 110 DSG PREMIUM" }, { modelId: 94721, markaAdi: "SKODA", modelAdi: "SUPERB 1.5 TSI ACT 150 DSG PREMIUM" }, { modelId: 94722, markaAdi: "SKODA", modelAdi: "SUPERB 1.5 TSI ACT 150 DSG PRESTIGE" }, { modelId: 97533, markaAdi: "SKODA", modelAdi: "SUPERB 2.0 TDI SCR 200 4x4 DSG L&K CRYSTAL" }, { modelId: 94388, markaAdi: "SUBARU", modelAdi: "FORESTER 2.0i e-BOXER XCLUSIVE CVT AWD" }, { modelId: 94387, markaAdi: "SUBARU", modelAdi: "FORESTER 2.0i e-BOXER XTREME CVT AWD" }, { modelId: 89140, markaAdi: "SUBARU", modelAdi: "XV 1.6i AWD XTREME CVT" }, { modelId: 92342, markaAdi: "SUZUKI", modelAdi: "JIMNY 1.5 GLX 4x4 AT" }, { modelId: 94683, markaAdi: "SUZUKI", modelAdi: "VITARA 1.4 GLX PREMIUM 4x4 AT" }, { modelId: 94179, markaAdi: "TOYOTA", modelAdi: "C-HR 1.8 HYBRID FLAME E-CVT" }, { modelId: 94180, markaAdi: "TOYOTA", modelAdi: "C-HR 1.8 HYBRID PASSION E-CVT" }, { modelId: 94181, markaAdi: "TOYOTA", modelAdi: "C-HR 1.8 HYBRID PASSION X-PACK E-CVT" }, { modelId: 93151, markaAdi: "TOYOTA", modelAdi: "CAMRY 2.5 HYBRID PASSION E-CVT" }, { modelId: 97887, markaAdi: "TOYOTA", modelAdi: "COROLLA 1.5 DREAM MULTIDRIVE S" }, { modelId: 97890, markaAdi: "TOYOTA", modelAdi: "COROLLA 1.5 FLAME X-PACK MULTIDRIVE S" }, { modelId: 97891, markaAdi: "TOYOTA", modelAdi: "COROLLA 1.5 PASSION X-PACK MULTIDRIVE S" }, { modelId: 92747, markaAdi: "TOYOTA", modelAdi: "COROLLA 1.8 HYBRID DREAM E-CVT" }, { modelId: 92749, markaAdi: "TOYOTA", modelAdi: "COROLLA 1.8 HYBRID FLAME X-PACK E-CVT" }, { modelId: 92751, markaAdi: "TOYOTA", modelAdi: "COROLLA 1.8 HYBRID PASSION X-PACK E-CVT" }, { modelId: 96791, markaAdi: "TOYOTA", modelAdi: "HILUX 2.4 D-4D 150 4x2 ADVENTURE" }, { modelId: 96793, markaAdi: "TOYOTA", modelAdi: "HILUX 2.4 D-4D 150 4x4 ADVENTURE" }, { modelId: 93148, markaAdi: "TOYOTA", modelAdi: "RAV4 2.5 HYBRID 4x4 FLAME E-CVT" }, { modelId: 93149, markaAdi: "TOYOTA", modelAdi: "RAV4 2.5 HYBRID 4X4 PASSION E-CVT" }, { modelId: 97539, markaAdi: "TOYOTA", modelAdi: "YARIS 1.5 DREAM MULTIDRIVE S" }, { modelId: 97536, markaAdi: "TOYOTA", modelAdi: "YARIS 1.5 HYBRID DREAM E-CVT" }, { modelId: 97537, markaAdi: "TOYOTA", modelAdi: "YARIS 1.5 HYBRID FLAME E-CVT" }, { modelId: 86892, markaAdi: "VOLKSWAGEN", modelAdi: "CARAVELLE COMFORTLINE 2.0 TDI 8+1 LWB 150 DSG" }, { modelId: 98756, markaAdi: "VOLKSWAGEN", modelAdi: "GOLF 1.0 eTSI 110 DSG LIFE" }, { modelId: 98757, markaAdi: "VOLKSWAGEN", modelAdi: "GOLF 1.0 eTSI 110 DSG STYLE" }, { modelId: 98759, markaAdi: "VOLKSWAGEN", modelAdi: "GOLF 1.5 eTSI 150 DSG STYLE" }, { modelId: 93708, markaAdi: "VOLKSWAGEN", modelAdi: "PASSAT 1.5 TSI ACT 150 DSG BUSINESS" }, { modelId: 93709, markaAdi: "VOLKSWAGEN", modelAdi: "PASSAT 1.5 TSI ACT 150 DSG ELEGANCE" }, { modelId: 93707, markaAdi: "VOLKSWAGEN", modelAdi: "PASSAT 1.5 TSI ACT DSG IMPRESSION" }, { modelId: 93713, markaAdi: "VOLKSWAGEN", modelAdi: "PASSAT 2.0 TDI 150 DSG BUSINESS" }, { modelId: 93714, markaAdi: "VOLKSWAGEN", modelAdi: "PASSAT 2.0 TDI 150 DSG ELEGANCE" }, { modelId: 89143, markaAdi: "VOLKSWAGEN", modelAdi: "POLO 1.0 TSI 95 COMFORTLINE" }, { modelId: 89144, markaAdi: "VOLKSWAGEN", modelAdi: "POLO 1.0 TSI 95 COMFORTLINE DSG" }, { modelId: 90920, markaAdi: "VOLKSWAGEN", modelAdi: "POLO 1.0 TSI 95 PS HIGHLINE DSG" }, { modelId: 94724, markaAdi: "VOLKSWAGEN", modelAdi: "T-ROC 1.5 TSI ACT (150) HIGHLINE DSG" }, { modelId: 96997, markaAdi: "VOLKSWAGEN", modelAdi: "TIGUAN 1.5 TSI ACT 150 DSG ELEGANCE" }, { modelId: 96996, markaAdi: "VOLKSWAGEN", modelAdi: "TIGUAN 1.5 TSI ACT 150 DSG LIFE" }, { modelId: 96999, markaAdi: "VOLKSWAGEN", modelAdi: "TIGUAN 2.0 TDI SCR 150 4MOTION DSG ELEGANCE" }, { modelId: 91380, markaAdi: "VOLKSWAGEN", modelAdi: "TOUAREG V6 3.0 TDI SCR 286 TIPTRONIC" }, { modelId: 96239, markaAdi: "VOLKSWAGEN", modelAdi: "TOUAREG V6 3.0 TDI SCR 286 TIPTRONIC ELEGANCE" }, { modelId: 97546, markaAdi: "VOLVO", modelAdi: "S90 2.0 B5 AWD INSCRIPTION GEARTRONIC" }, { modelId: 97897, markaAdi: "VOLVO", modelAdi: "V60 CROSS COUNTRY 2.0 B5 AWD GEARTRONIC" }, { modelId: 96798, markaAdi: "VOLVO", modelAdi: "V90 CROSS COUNTRY 2.0 B5 AWD PRO GEARTRONIC" }, { modelId: 90606, markaAdi: "VOLVO", modelAdi: "XC40 2.0 D3 FWD MOMENTUM GEARTRONIC" }, { modelId: 96245, markaAdi: "VOLVO", modelAdi: "XC40 RECHARGE T5 FWD INSCRIPTION DCT" }, { modelId: 93603, markaAdi: "VOLVO", modelAdi: "XC60 2.0 B4 AWD INSCRIPTION GEARTRONIC" }, { modelId: 93604, markaAdi: "VOLVO", modelAdi: "XC90 2.0 B5 AWD 7KOLTUK INSCRIPTION GEARTRONIC" },];
+
+
+        $(document).on('change', '#markaId', function () {
+            filter = modeller.filter(function (el) { return el.markaAdi == $('#markaId').val(); });
+            var data = { data: filter };
+            var templateResult = Handlebars.compile(document.getElementById("modelTemplate").innerHTML);
+            output = templateResult(data);
+            $("#modelId").html(output);
+        });
+
+        $(document).on('submit', '#aracEkleForm', function () {
+            // {{modelId}}|{{adet}}|{{yilId}}|{{paraBirimiId}}|{{kmId}}
+            valueSet = $("#modelId").val() + '|' + $("#adet").val() + '|' + $("#kiralamaSuresi").val() + '|' + $("#paraBirimi").val() + '|' + $("#kmLimiti").val();
+
+            var found = $('input[value="' + valueSet + '"]').length;
+
+            if (found > 0) {
+                alert('Aynı seçenekler ile bu aracı daha önce eklediniz. Lütfen aracı sildikten sonra Araç Ekle butonuna tıklayınız.');
+                return false;
+            }
+            else {
+                var data = {
+                    data: [
+                        {
+                            marka: $("#markaId").val(),
+                            model: $("#modelId option:selected").text(),
+                            modelId: $("#modelId").val(),
+                            adet: $("#adet").val(),
+                            yil: $("#kiralamaSuresi option:selected").text(),
+                            yilId: $("#kiralamaSuresi").val(),
+                            km: $("#kmLimiti option:selected").text(),
+                            kmId: $("#kmLimiti").val(),
+                            paraBirimi: $("#paraBirimi option:selected").text(),
+                            paraBirimiId: $("#paraBirimi").val(),
+                        }
+                    ]
+                };
+                var templateResult = Handlebars.compile(document.getElementById("aracTemplate").innerHTML);
+                output = templateResult(data);
+                $("#teklifAraclar").append(output);
+                return false;
+            }
+        });
+
+        $(document).on('click', '.delete-button', function () {
+            $(this).parent('.car-item-container').remove();
+        });
+
+        $(document).on('submit', '#teklifForm', function () {
+            var grResult = grecaptcha.getResponse();
+
+            if (grResult == "") {
+                alert('Lütfen "Ben robot değilim" seçeneğini işaretleyin');
+                return false;
+            }
+
+            var araclarArrCount = $("input[name='araclar']").length;
+            if (araclarArrCount !== 0) {
+                return true;
+            }
+            else {
+                alert('En az bir adet araç eklemeniz gerekiyor.');
+                return false;
+            }
+
+
+        });
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47267827-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-47267827-1');
+    </script>
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "48aa233b-c9df-4fee-a158-833f4074f6d7"; (function () { d = document; s = d.createElement("script"); s.src = "../client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+</body>
+
+
+</html>

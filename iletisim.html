@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" data-is-ie="False">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intercity Filo - &#x130;leti&#x15F;im</title>
+    <link rel="shortcut icon" href="dist/images/icons/favicon.ico" type="image/x-icon" />
+
+
+    <link rel="stylesheet" href="/dist/styles/common.css" />
+    <link rel="stylesheet" href="/dist/styles/contact-us.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo"><a href="/index.html"><img src="/dist/images/rent8_logo.svg" /></a></div>
+                <div class="show-menu-for-mobile">
+                    <button>
+                        <img width="21" height="21" src="dist/images/icons/hamburger_menu.svg" class="fw" />
+                    </button>
+                </div>
+                <nav class="main-navigation">
+                    <!-- 
+                            <ul class="sub-nav level1">
+                            <li class="level1">
+                                <div class="menu-title">
+                                    <a href="index.html">ANASAYFA</a>
+                                </div>
+                            </li>
+                            <li class="level1">
+                                <div class="menu-title">
+                                    <a href="online-islemler.html">ONLINE İŞLEMLER</a>
+                                </div>
+                            </li>
+                            <li class="level1">
+                                <div class="menu-title">
+                                    <a href="sikca-sorulanlar/kiralama.html">SIKÇA SORULANLAR</a>
+                                </div>
+                            </li>
+                            <li class="level1">
+                                <div class="menu-title">
+                                    <a href="en/index.html" class="english-flag">
+                                        EN
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="level1">
+                                <div class="menu-title">
+                                    <a href="teklif-al.html">TEKLİF AL</a>
+                                </div>
+                            </li>
+                        </ul>
+                        -->
+                    <ul class="main-nav level1">
+                        <li class="level1 @*has-sub-menu*@">
+                            <div class="menu-title">
+                                <!-- <a href="uzun-donem-filo-kiralama.html">UZUN DÖNEM FİLO KİRALAMA</a> -->
+                                <a href="./index.html">ANA SAYFA</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./kurumsal/hakkimizda.html">KURUMSAL</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./hizmetlerimiz.html">HİZMETLERİMİZ</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./kariyer/insan-kaynaklari-politikamiz.html">KARİYER</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./iletisim.html">İLETİŞİM</a>
+                            </div>
+                        </li>
+                        <li class="level1">
+                            <div class="menu-title">
+                                <a href="./sikca-sorulanlar/genel.html">SSS</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <section class="show-case"></section>
+    <div class="breadcrumb-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">Anasayfa</a>
+                </li>
+                <span>
+                    İletişim
+                </span>
+
+            </ul>
+        </div>
+    </div>
+    <div class="page-content-container static">
+        <div class="container">
+            <div class="page-content">
+                <h1 class="title have-underline">İletişim</h1>
+                <div class="contact-items">
+                    <div class="item">
+                        <div class="image-container">
+                            <img width="59" height="59" src="dist/images/contact-us/e-mail.svg" class="fw" alt="">
+                        </div>
+                        <div class="item-title">E-Posta</div>
+                        <div class="description">
+                            <a href="email:miy@intercityfilo.com">miy@intercityfilo.com</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-container">
+                            <img width="59" height="59" src="dist/images/contact-us/telephone.svg" class="fw" alt="">
+                        </div>
+                        <div class="item-title">Telefon</div>
+                        <div class="description">
+                            <a href="tel:+90 216 645 7000">+90 216 645 7000</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-container">
+                            <img width="59" height="59" src="dist/images/contact-us/canli_destek.svg" class="fw" alt="">
+                        </div>
+                        <div class="item-title">Canlı Destek</div>
+                        <div class="description" onclick="$crisp.push(['do', 'chat:open']);">
+                            <span><b>Hafta içi:</b> 09:00 / 18:00 </span>
+                            <span><b>Hafta sonu:</b> 09:00 / 14:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sections-container">
+                    <form class="form-section contact-form-container" method="post" id="iletisimForm">
+                        <div class="form-section">
+                            <div class="section-title">
+                                İletişim Formu
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element">
+                                    <div class="element-title">Ad</div>
+                                    <div class="element">
+                                        <input type="text" name="ad" id="ad" required />
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element">
+                                    <div class="element-title">Soyad</div>
+                                    <div class="element">
+                                        <input type="text" name="soyad" id="soyad" required />
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element">
+                                    <div class="element-title">E-Posta Adresi</div>
+                                    <div class="element">
+                                        <input type="text" name="email" id="email" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element">
+                                    <div class="element-title">Telefon Numarası</div>
+                                    <div class="element">
+                                        <input type="text" name="telefon" id="telefon"
+                                            pattern="^(05)([0-9]{2})\s?([0-9]{3})\s?([0-9]{2})\s?([0-9]{2})$"
+                                            required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element">
+                                    <div class="element-title">Firma Adı</div>
+                                    <div class="element">
+                                        <input type="text" name="firma" id="firma" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element">
+                                    <div class="element-title">Kategori</div>
+                                    <div class="element select-element">
+                                        <select name="kategori" id="kategori" required>
+                                            <option value="">Kategori seçiniz</option>
+                                            <option value="0">İletişim</option>
+                                            <option value="1">Yardım</option>
+                                            <option value="2">Şikayet/Memnuniyet</option>
+                                            <option value="3">Satış Departmanı</option>
+                                            <option value="4">Satış Sonrası Hizmetler</option>
+                                            <option value="5">Lastik Bilgi</option>
+                                            <option value="6">Kariyer</option>
+                                            <option value="7">Teknoloji Departmanı</option>
+                                        </select>
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element">
+                                    <div class="element-title">Mesaj Konusu</div>
+                                    <div class="element">
+                                        <input type="text" name="konu" id="konu" required />
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element">
+                                    <div class="element-title">Mesajınız</div>
+                                    <div class="element">
+                                        <textarea class="message" id="mesaj" rows="3" name="mesaj" placeholder=""
+                                            required></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element">
+                                    <div class="element-title">Doğrulama Kodu</div>
+                                    <div class="">
+
+                                        <div id="863092fa-522c-427f-afa0-38838eeb663f" class="g-recaptcha"
+                                            data-sitekey="6LcvfPYZAAAAAKSDI7HkL3mdPeoi6KbO9AK7-bTb"></div>
+                                        <script>
+                                            function _863092fa_522c_427f_afa0_38838eeb663f() {
+                                                if (typeof grecaptcha !== 'undefined')
+                                                    grecaptcha.render('863092fa-522c-427f-afa0-38838eeb663f', {
+                                                        'sitekey': '6LcvfPYZAAAAAKSDI7HkL3mdPeoi6KbO9AK7-bTb',
+                                                        'theme': 'light',
+                                                    })
+                                            }
+                                        </script>
+                                        <script
+                                            src="../www.google.com/recaptcha/apif529.js?onload=_863092fa_522c_427f_afa0_38838eeb663f&amp;render=explicit&amp;hl=en"
+                                            async defer></script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-element-row">
+                                <div class="form-element ">
+                                    <div class="element-title"></div>
+                                    <div class="element action">
+                                        <button type="submit" class="btn green-button">Gönder</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <input name="__RequestVerificationToken" type="hidden"
+                            value="CfDJ8KufIJihDv9CkMf-2jWhCRIHqDQzBnSIEMoN6H1QzaufihG1KzQA2qSPaxXeiG6LKrVTOdOQAGs4sR-TdSvyC7iMK2WmM4KzttZmmEXHQo_nLp_y_neaCXfIGtR9oQTnrZ1dmvbCimC2tM3dSQTPlyI" />
+                    </form>
+                    <div class="form-section addresses-container">
+                        <div class="form-section">
+                            <div class="section-title">
+                                Adreslerimiz
+                            </div>
+                            <div class="items">
+                                <div class="item">
+                                    <div class="item-title">Genel Merkez</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Akfırat Mahallesi, Göçbeyli Bulvarı, No: 1/1, İstanbul Park,
+                                            Tuzla / İstanbul
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (216) 645 70 00">0 (216) 645 70 00</a>
+                                        </p>
+                                        <p>
+                                            <b>Fax:</b> <a href="tel: 0 (216) 540 53 19"> 0 (216) 540 53 19</a>
+                                        </p>
+                                        <p>
+                                            <b>E-Posta:</b> <a
+                                                href="email:bilgi@intercityfilo.com">bilgi@intercityfilo.com</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">İstanbul Servis</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Dudullu Organize Sanayi Bölgesi, Esenkent Mah. Muhterem Sokak,
+                                            No:29 ve 29/1, 34775, Ümraniye / İstanbul
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (216) 645 72 00">0 (216) 645 72 00</a>
+                                        </p>
+                                        <p>
+                                            <b>Fax:</b> <a href="tel: 0 (216) 540 59 35"> 0 (216) 540 59 35</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">Ankara Servis</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Bahçekapı Mah. 2500.Cadde No:7 Şaşmaz, Etimesgut / Ankara
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (312) 987 05 06">0 (312) 987 05 06</a>
+                                        </p>
+                                        <p>
+                                            <b>Fax:</b> <a href="tel:0 (312) 278 35 95">0 (312) 278 35 95</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">Ankara Otonomi Showroom</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Saracalar Mahallesi, Özal Bulvarı, Otonomi Galericiler Sitesi,
+                                            G1 Blok No:19-20, Ankara
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (549) 812 37 54">0 (549) 812 37 54</a>
+                                        </p>
+                                        <p>
+                                            <b>Fax:</b> <a href="tel:0 (507) 541 54 56">0 (507) 541 54 56</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">İzmir</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Fatih Mah. D, E Blok, 1203 Sok. No: 12 Sarnıç, Gaziemir /
+                                            İzmir
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (232) 281 55 35">0 (232) 281 55 35</a>
+                                        </p>
+                                        <p>
+                                            <b>Fax:</b> <a href="tel:0 (232) 281 54 36">0 (232) 281 54 36</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">Bursa</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Alaaddin Bey Mahallesi Ayfatma Caddesi No : 5A/A Nilüfer /
+                                            Bursa
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (224) 243 46 46">0 (224) 243 46 46</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">Samsun</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Kılıçdede Mahallesi, Ülkem Sokak, Borkonut Niş İş Merkezi, A
+                                            Blok, Kat: 1, Oda No:13 (Yeni Adliye arkası), İlkadım / Samsun
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (362) 430 17 18">0 (362) 430 17 18</a>
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (533) 306 38 41">0 (533) 306 38 41</a>
+                                        </p>
+                                        <p>
+                                            <b>Fax:</b> <a href="tel:0 (362) 266 67 60">0 (362) 266 67 60</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">Adana</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Yesiloba Mahallesi, Turhan Cemal Beriker Bulvari, 46129 Sokak,
+                                            No: 2/A Seyhan / Adana
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (322) 342 16 37">0 (322) 342 16 37</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">Antalya</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Aspendos Bulvarı, Yeşilova Mahallesi, No: 176/D Muratpaşa /
+                                            Antalya
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (242) 225 11 92">0 (242) 225 11 92</a>
+                                        </p>
+                                        <p>
+                                            <b>Fax:</b> <a href="tel:0 (242) 313 04 14">0 (242) 313 04 14</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">Muğla</div>
+                                    <div class="description">
+                                        <p>
+                                            <b>Adres:</b> Babataşı Mahallesi 747. Sokak No:8/A Fethiye / Muğla
+                                        </p>
+                                        <p>
+                                            <b>Telefon:</b> <a href="tel:0 (252) 612 22 81">0 (252) 612 22 81</a>
+                                        </p>
+                                        <p>
+                                            <b>Fax:</b> <a href="tel:0 (252) 612 08 44">0 (252) 612 08 44</a>
+                                        </p>
+                                    </div>
+                                    <button class="show-item">
+                                        <img src="dist/images/icons/arrow_down.svg" width="16" height="9">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+
+        </div>
+        <div class="circle"></div>
+        <div class="trapezoid-box">
+            <div></div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-top">
+            7/24 Rent Eight Acil Yardım Hattı
+            <a href="tel:0 (216) 645 7 000">0 (216) 645 7 000</a>
+        </div>
+        <div class="main-footer">
+
+            <div class="container">
+                <ul class="level1">
+                    <li class="level1">
+                        <a href="uzun-donem-filo-kiralama.html"><span>UZUN DÖNEM FİLO KİRALAMA</span></a>
+                        <ul class="level2">
+                            <li class="level2"><a href="uzun-donem-filo-kiralama.html#filo-kiralamanin-avantajlari">Filo
+                                    Kiralamanın Avantajları</a></li>
+                            <li class="level2"><a
+                                    href="uzun-donem-filo-kiralama.html#kiralama-satin-alma-karsilastirma">Kiralama -
+                                    Satın Alma
+                                    Karşılaştırma</a></li>
+                            <li class="level2"><a href="teklif-al.html">Teklif Al</a></li>
+                        </ul>
+                    </li>
+                    <li class="level1 corporate">
+                        <a href="/kurumsal/hakkimizda.html"><span>KURUMSAL</span></a>
+                        <ul class="level2">
+                            <li class="level2"><a href="/kurumsal/hakkimizda.html">Hakkımızda</a></li>
+                            <li class="level2"><a href="/kurumsal/tarihce.html">Tarihçe</a></li>
+                            <li class="level2">
+                                <span>Grup Şirketlerimiz</span>
+                                <ul class="level3">
+                                    <li class="level3"><a href="/kurumsal/Rent Eight-istanbul-park.html">Rent Eight
+                                            İstanbul
+                                            Park</a></li>
+                                    <li class="level3"><a href="/kurumsal/Rent Eight-destek.html">Rent Eight Destek</a>
+                                    </li>
+                                    <li class="level3"><a href="/kurumsal/Rent Eight-2-el.html">Rent Eight 2. El</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level2"><a href="/kurumsal/kultur-degerlerimiz.html">Kültür &amp;
+                                    Değerlerimiz</a>
+                            </li>
+                            <li class="level2"><a href="/kurumsal/basinda-biz.html">Basında Biz</a></li>
+                            <li class="level2"><a href="/kurumsal/baskanin-mesaji.html">Başkan'ın Mesajı</a></li>
+                        </ul>
+                    </li>
+                    <li class="level1 career">
+                        <a href="/kariyer/insan-kaynaklari-politikamiz.html"><span>KARİYER</span></a>
+                        <ul class="level2">
+                            <li class="level2"><a href="/kariyer/insan-kaynaklari-politikamiz.html">İnsan Kaynakları
+                                    Politikamız</a></li>
+                            <li class="level2"><a href="/kariyer/organizasyon-yapimiz.html">Organizasyon Yapımız</a>
+                            </li>
+                            <li class="level2"><a href="/kariyer/calisma-ilkelerimiz.html">Çalışma İlkelerimiz</a></li>
+                            <li class="level2"><a href="/kariyer/kariyer-gelisimi.html">Kariyer Gelişimi</a></li>
+                            <li class="level2"><a href="/kariyer/ise-alim.html">İşe Alım</a></li>
+                            <li class="level2"><a href="/kariyer/basvuru-formu.html">Başvuru Formu</a></li>
+                        </ul>
+                    </li>
+                    <li class="level1 contact">
+                        <a href="/iletisim.html">İLETİŞİM</a>
+                    </li>
+                    <li class="level1 online-services">
+                        <a href="/online-islemler.html"><span>ONLINE İŞLEMLER</span></a>
+                        <ul class="level2">
+                            <li class="level2"><a href="https://online.Rent Eightrentacar.com/tpc/" target="_blank">TPC
+                                    Kontrol</a></li>
+                            <li class="level2"><a href="https://online.Rent Eightrentacar.com/ogs/" target="_blank">OGS
+                                    /
+                                    HGS
+                                    Geçiş</a></li>
+                            <li class="level2"><a href="https://online.Rent Eightrentacar.com/kgm-ceza/"
+                                    target="_blank">OGS
+                                    / HGS Ceza</a></li>
+                            <li class="level2"><a href="https://online.Rent Eightrentacar.com/lastik-talep/"
+                                    target="_blank">Lastik Talep</a></li>
+                        </ul>
+                    </li>
+                    <li class="level1 faq"><a href="/sikca-sorulanlar/kiralama.html">SIKÇA SORULAN SORULAR</a></li>
+                </ul>
+                <div class="social-media-icons">
+                    <a href="https://facebook.com/Rent Eight" target="_blank"><img
+                            src="/dist/images/social/facebook.svg" class="fw" alt="Facebook"></a>
+                    <a href="https://linkedin.com/company/Rent Eightrentacar" target="_blank"><img
+                            src="/dist/images/social/linkedin.svg" class="fw" alt="Linkedin"></a>
+                    <a href="https://instagram.com/Rent Eightpark" target="_blank"><img
+                            src="/dist/images/social/instagram.svg" class="fw" alt="Instagram"></a>
+                    <a href="https://twitter.com/Rent Eight" target="_blank"><img src="/dist/images/social/twitter.svg"
+                            class="fw" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="logo fwx"><a href="index.html"><img src="/dist/images/rent8_logo.svg" /></a></div>
+                    <div class="copyright-text">
+                        © 1991-2021 Rent Eight. Tüm Hakları Saklıdır.<br />
+                        Rent Eight, Ekim Turizm Tic. ve San. A.Ş.'nin tescilli markasıdır.<br />
+                        <div class="copyright-text-link">
+                            <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+                            <a href="kvkk/kisisel-verilerin-korunmasi-ve-i%cc%87slenmesi-politikasi.html">Kişisel
+                                Verilerin Korunması</a>
+                            <a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/11226"
+                                target="_blank" rel="nofollow">Bilgi Toplumu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="triangle">
+            <svg width="198" class="triangle1" height="168">
+                <polygon class="" points="98,0 0,168 198,168" style="fill:transparent;stroke:#67AD3D;stroke-width:1" />
+            </svg>
+            <svg width="198" class="triangle2" height="168">
+                <polygon class="" points="98,0 0,168 198,168" style="fill:transparent;stroke:#67AD3D;stroke-width:1" />
+            </svg>
+        </div>
+        <div class="trapezoid-box">
+            <div></div>
+        </div>
+    </footer>
+
+    <div class="cookie-agreement-container">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    Sitemizin işlemesini sağlamak için teknik çerezler kullanılmaktadır.
+                    <br><br>
+                    Çerezler hakkında detaylı bilgi almak için <a href="gizlilik-politikasi.html"><strong>Çerez
+                            Politikası</strong></a> ve
+                    <a href="kvkk/cerez-aydinlatma-metni.html"><strong>Çerez Aydınlatma Metni</strong></a>'ni
+                    inceleyebilirsiniz.
+                </div>
+                <div class="agree-button-container">
+                    <button class="agree">KABUL ET</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="dist/scripts/contact-us.js"></script>
+    <script type="text/javascript">
+
+
+        $(document).on('submit', '#iletisimForm', function () {
+            var grResult = grecaptcha.getResponse();
+
+            if (grResult == "") {
+                alert('Lütfen "Ben robot değilim" seçeneğini işaretleyin');
+                return false;
+            }
+        });
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47267827-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-47267827-1');
+    </script>
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "48aa233b-c9df-4fee-a158-833f4074f6d7"; (function () { d = document; s = d.createElement("script"); s.src = "../client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+</body>
+
+
+</html>
