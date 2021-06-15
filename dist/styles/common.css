@@ -1,6 +1,9 @@
 .btn.green-button { background:#247BDB !important; }
  .have-underline:after { background-color: #247BDB !important; }
 
+ footer .footer-top a {
+     color:#fff !important;
+ }
 
 @-ms-viewport {
     width: device-width;
@@ -2426,12 +2429,12 @@ html {
         display: none;
     }
     header .header-container .logo {
-        width: 305px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         height: unset !important;
         margin-top:28px;
+        margin-left:-20px;
     }
     header .header-container .logo img {
         width: 75% !important;

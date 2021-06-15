@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+.white-button { background-color: #fff !important; color:#247BDB !important; }
+
 .btn {
     position: relative;
     height: 48px;
