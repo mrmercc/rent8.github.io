@@ -2516,14 +2516,16 @@ html {
     }
     header .header-container .main-navigation .main-nav li:after {
         content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: -1.5px;
-        width: 3px;
+        display: block  !important;
+        position: absolute  !important;
+        top: 7px  !important;
+        bottom: 0  !important;
+        left: -5.5px  !important;
+        height: 5px  !important;
+        width: 5px  !important;
         background-color: #247BDB !important;
-        transform: skew(-13deg, 0);
+        /* transform: skew(199deg, 0); */
+        border-radius: 50%  !important;
     }
     /*
     header::before {
